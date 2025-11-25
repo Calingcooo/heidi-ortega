@@ -1,4 +1,3 @@
-import HeroSection from "./pages/sections/HeroSection";
 import "./App.css";
 import { Route, Routes } from "react-router";
 import Index from "./pages/index"
