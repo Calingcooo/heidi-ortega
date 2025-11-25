@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf6f3;
+  --foreground: #5b3744;
+
+  --card: #ffffff;
+  --card-foreground: #5b3744;
+
+  --popover: #ffffff;
+  --popover-foreground: #5b3744;
+
+  --primary: #d63a7c;
+  --primary-foreground: #ffffff;
+
+  --secondary: #f7f2ec;
+  --secondary-foreground: #5b3744;
+
+  --muted: #f5f0eb;
+  --muted-foreground: #a87c8f;
+
+  --accent: #f08a66;
+  --accent-foreground: #ffffff;
+
+  --destructive: #e53935;
+  --destructive-foreground: #ffffff;
+
+  --border: #e8e4dd;
+  --input: #e8e4dd;
+  --ring: #d63a7c;
+
+  --rose-gold: #f08a66;
+  --rose-gold-light: #f8d7c9;
+  --blush: #f7d8e8;
+  --cream: #fbf7ee;
+
+  --radius: 0.5rem;
+
+  --sidebar-background: #fafafa;
+  --sidebar-foreground: #3f3f45;
+  --sidebar-primary: #1a1a1d;
+  --sidebar-primary-foreground: #fafafa;
+  --sidebar-accent: #f4f4f5;
+  --sidebar-accent-foreground: #1a1a1d;
+  --sidebar-border: #e4e6eb;
+  --sidebar-ring: #4da3ff;
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display", serif;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
